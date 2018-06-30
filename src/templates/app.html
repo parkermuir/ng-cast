@@ -7,11 +7,12 @@
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player>
+      <video-player current="$ctrl.currentVideo"><h5><em>videoPlayer</em> component goes here</h5></video-player>
+      <!-- <pre>{{$ctrl.currentVideo}}</pre> -->
     </div>
     <div class="col-md-5">
-      <video-list><h5><em>videoList</em> component goes here</h5></video-list>
-      <pre>{{vm.videoList.length}}</pre>
+      <video-list videos="$ctrl.videoList"><h5><em>videoList</em> component goes here</h5></video-list>
+      <pre>{{$ctrl.videoList.length}}</pre>
     </div>
-  <div>
+  </div>
 </div>

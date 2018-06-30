@@ -1,3 +1,7 @@
 <ul class="video-list">
-  <video-list-entry videos="vm.videoList" ng-repeat="video in $ctrl.videos track by $index"></video-list-entry>
+  <div class="does-this-div-show">
+  <video-list-entry ng-repeat="video in $ctrl.videos track by $index" video="video" >
+  </video-list-entry>
+  </div>
+  <pre>{{$ctrl.videos.length}}</pre>
 </ul>
