@@ -1,9 +1,9 @@
 angular.module('video-player')
   .component('videoListEntry', {
+    controller: 'AppCtrl',
     bindings: {
-      video: '<'
-    },
-    controller: function () {
+      video: '<',
+      onClick: '<'
     },
     templateUrl: 'src/templates/videoListEntry.html'
   });
